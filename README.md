@@ -17,5 +17,5 @@
 ## The example_prompt is for langchain and simply structures the inputs and outputs.
 ## Everything from line 104 to 130 is mainly setting up the few shot learning.
 ## After that the goal of the code is to setup the chain and execution of the queries, basically using builtin langchain functions to send the inputs over to langchain.
-## The code after that is setting up the helper function for processing the chain executions, the streamlit aspect and dealing with the I/O of everything.
+## The code after that is setting up the helper function for processing the chain executions, the streamlit aspect and dealing with the I/O on the 'frontend' side.
 
