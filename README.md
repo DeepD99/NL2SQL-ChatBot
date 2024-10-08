@@ -9,3 +9,8 @@
 
 ## Here is an article from which I got the code: https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql
 ## There is also a video that goes into depth explaining everything: https://www.youtube.com/watch?v=fss6CrmQU2Y
+
+## To run this script, one must be connected to a DB, have an API key with openai or llama etc, and have a langchain API key
+## The examples list is meant to give the LLM an idea what the query should look based upon the input. It is essentially a guideline for the LLM to follow
+## Depending on what kind of schema is being used and the information within, the examples will look different, simply change them to fit your needs.
+## Use this as an edge case scenario as well, if someone puts in something obscure, have an example closest to it to return an output.
