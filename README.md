@@ -1,13 +1,7 @@
 # NL2SQL Chatbot & Palmona Pathogenomics AI Chatbot Project
 
 ## Table of Contents
-1. [Getting Started](#getting-started)  
-   - [Prerequisites](#prerequisites)  
-   - [Installation](#installation)
-   - [Environment Variables Setup](#Environment-variables-setup)  
-   - [Running the Application](#Running-the-application)  
-   - [All Requirements for the Project](requirements.txt)  
-2. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
+1. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
    - [Project Flow](#project-flow)  
    - [Functionality](#functionality)  
    - [References](#references)  
@@ -19,6 +13,12 @@
      - [Prompt Template Construction](#prompt-template-construction)  
      - [Semantic Similarity Selector](#semantic-similarity-selector)  
      - [Streamlit Chat Interface](#streamlit-chat-interface)  
+2. [Getting Started](#getting-started)  
+   - [Prerequisites](#prerequisites)  
+   - [Installation](#installation)
+   - [Environment Variables Setup](#Environment-variables-setup)  
+   - [Running the Application](#Running-the-application)  
+   - [All Requirements for the Project](requirements.txt)  
 3. [Palmona Pathogenomics AI Chatbot Overview](#palmona-pathogenomics-ai-chatbot-overview)  
    - [Motivation](#motivation)  
    - [Purpose](#purpose)  
