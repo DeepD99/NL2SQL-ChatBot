@@ -38,6 +38,11 @@ Make sure you have the following installed on your system:
 - **Python** (version 3.8 or higher)
 - **pip** (Python package manager)
 
+Also make sure you have created accounts for OpenAI and LangChain, you must create an API key for both
+
+- **OpenAi** (https://platform.openai.com/docs/quickstart/create-and-export-an-api-key)
+- **LangChain** [(https://www.langchain.com/](https://docs.smith.langchain.com/how_to_guides/setup/create_account_api_key))
+
 ### Installation
 
 1. **Clone the Repository**  
@@ -45,3 +50,8 @@ Make sure you have the following installed on your system:
    ```bash
    git clone <repository-url>
    cd <repository-folder>
+
+2. **Install the requirements**
+   Run this command:
+   pip install -r requirements.txt
+
