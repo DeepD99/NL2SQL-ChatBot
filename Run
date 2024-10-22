@@ -1,0 +1,4 @@
+!streamlit run script2.py
+
+##This file should be of type .ipynb
+##It stands for IPython Notebook, which is the format used by Jupyter Notebooks.
