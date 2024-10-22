@@ -1,19 +1,25 @@
 # NL2SQL Chatbot & Palmona Pathogenomics AI Chatbot Project
 
 ## Table of Contents
-1. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
+1. [Getting Started](#getting-started)  
+   - [Prerequisites](#prerequisites)  
+   - [Installation](#installation)  
+   - [Environment Variables Setup](#environment-variables-setup)  
+   - [Running the Application](#running-the-application)  
+   - [Sample `requirements.txt`](#sample-requirementstxt)  
+2. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
    - [Project Flow](#project-flow)  
    - [Functionality](#functionality)  
    - [References](#references)  
    - [Key Components](#key-components)  
-     - [Environment Variables Setup](#environment-variables-setup)  
+     - [Environment Variables Setup](#environment-variables-setup-1)  
      - [Database Initialization](#database-initialization)  
      - [LLM Model Setup](#llm-model-setup)  
      - [Few-shot Examples](#few-shot-examples)  
      - [Prompt Template Construction](#prompt-template-construction)  
      - [Semantic Similarity Selector](#semantic-similarity-selector)  
      - [Streamlit Chat Interface](#streamlit-chat-interface)  
-2. [Palmona Pathogenomics AI Chatbot Overview](#palmona-pathogenomics-ai-chatbot-overview)  
+3. [Palmona Pathogenomics AI Chatbot Overview](#palmona-pathogenomics-ai-chatbot-overview)  
    - [Motivation](#motivation)  
    - [Purpose](#purpose)  
    - [Problem Statement](#problem-statement)  
@@ -21,75 +27,21 @@
 
 ---
 
-## NL2SQL Chatbot Overview
+## Getting Started
 
-This project leverages the **OpenAI LLM (Large Language Model)** and a **database (DB)** to derive insights from the information stored within the database. 
+To get started with the NL2SQL Chatbot and Palmona Pathogenomics AI Chatbot Project, follow the steps below:
 
-### Project Flow
-The process follows this sequence:  
-**Question → LLM → DB → LLM → Answer**
+### Prerequisites
 
-1. A human question is transformed by the LLM into a SQL query based on the database properties.
-2. The query is executed on the database, retrieving the answer.
-3. The LLM then returns the result to the user.
+Make sure you have the following installed on your system:
 
-### Functionality
-- Created a chat interface with **Streamlit** for user interaction with the LLM.  
-- Sensitive information (e.g., API keys) is stored in a **config file**, and relevant variables are imported into the code.
+- **Python** (version 3.8 or higher)
+- **pip** (Python package manager)
 
-### References  
-- **Article**: [Mastering NL2SQL with LangChain](https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql)  
-- **Video**: [YouTube Explanation](https://www.youtube.com/watch?v=fss6CrmQU2Y)  
+### Installation
 
----
-
-### Key Components
-
-#### Environment Variables Setup
-- Configures environment variables necessary for **LangChain** and **OpenAI API**.  
-- Includes: `LANGCHAIN_TRACING_V2`, `LANGCHAIN_ENDPOINT`, `OPENAI_API_KEY`, and `LANGCHAIN_API_KEY`.
-
-#### Database Initialization
-- Connects to a database using **SQLAlchemy** by setting the `db_uri` and initializing a `SQLDatabase` object for handling SQL queries.
-
-#### LLM Model Setup
-- Initializes a **GPT-3.5 Turbo** model via `ChatOpenAI`.  
-- Temperature is set to **0** to ensure deterministic responses.
-
-#### Few-shot Examples
-- Defines several **few-shot examples** that map user inputs to SQL queries. These examples assist the LLM in crafting accurate SQL queries based on the given questions.
-
-#### Prompt Template Construction
-- Uses `ChatPromptTemplate` to create a custom template.  
-- The model is instructed to generate **MySQL queries** using example questions and answers for reference.
-
-#### Semantic Similarity Selector
-- Implements a **SemanticSimilarityExampleSelector** from the **Chroma vectorstore**.  
-- This selector identifies relevant examples to enhance the model’s performance by selecting the most similar examples based on the user’s input.
-
-#### Streamlit Chat Interface
-- Uses **Streamlit** to build a simple web application for interaction.  
-- Stores chat history in the **session state** to maintain conversations across user inputs.
-
----
-
-## Palmona Pathogenomics AI Chatbot Overview
-
-### 1. Motivation  
-The primary motivation behind this project was to gain hands-on experience with **AI-related technologies**. As AI shapes the future, acquiring practical knowledge in this field is essential. Expanding skillsets across different areas of technology provides flexibility and opportunities for growth.
-
-### 2. Purpose  
-The project was designed to help **Palmona Pathogenomics** build an **AI-powered chatbot**. This chatbot offers paid subscribers personalized insights by analyzing their individual data, enabling better decision-making in health-related scenarios.
-
-### 3. Problem Statement  
-Palmona Pathogenomics focuses on combating **emerging pathogen strains** that threaten public health. The AI chatbot assists users by:
-- **Uncovering relationships** between data points.
-- **Detecting anomalies** in datasets.
-- **Identifying patterns** to predict pathogen behavior and inform the development of targeted interventions.
-
-### 4. Lessons Learned  
-Throughout the project, several challenges arose, including:
-- **Troubleshooting code** and resolving dependency issues.
-- Learning **patience** when results were not immediate.  
-
-This experience emphasized the importance of **perseverance** and the ability to take a step back when necessary. Patience is a critical skill, developed only through consistent practice and overcoming setbacks.
+1. **Clone the Repository**  
+   Open your terminal and clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
