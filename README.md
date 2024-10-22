@@ -1,4 +1,4 @@
-# NL2SQL
+# NL2SQL Chatbot
 
 ## This projects consists of utilizing the OpenAI LLM, and a DB to find more insight about the information that lies in the DB.
 ## The flow of the process goes as such:
