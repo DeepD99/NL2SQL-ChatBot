@@ -4,8 +4,7 @@
 1. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
    - [Installation](#installation)  
-   - [Environment Variables Setup](#environment-variables-setup)  
-   - [Running the Application](#running-the-application)  
+   - [Running the Application](#Running-the-application)  
    - [All Requirements for the Project](requirements.txt)  
 2. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
    - [Project Flow](#project-flow)  
@@ -54,4 +53,9 @@ Also make sure you have created accounts for OpenAI and LangChain, you must crea
 2. **Install the requirements**
    Run this command:
    pip install -r requirements.txt
+
+### Running-the-application
+
+1. **Running the application**
+   To run the project, run the the .ipynb file, this file will start streamlit and launch the chatbot
 
