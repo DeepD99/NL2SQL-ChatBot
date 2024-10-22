@@ -66,7 +66,7 @@ You can create a config.py file in the root directory of the project and add the
    - OPENAI_API_KEY=<your-openai-api-key>
    - LANGCHAIN_API_KEY=<your-langchain-api-key>
 
-Also have the DB your connecting to handy, as you will need the following information to put within the config file:
+2. Also have the DB your connecting to handy, as you will need the following information to put within the config file:
    ```bash
    - USER = ""
    - PASSWORD = ""
