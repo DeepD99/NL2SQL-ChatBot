@@ -24,3 +24,20 @@
 
 ## Streamlit App for Chat Interface: Uses Streamlit to create a simple web application that allows users to input queries, receive responses, and display the chat history. The app stores chat messages in the session state and reruns to update the conversation after each query.
 
+# Palmona Pathogenomics AI Chatbot Project
+
+## 1. Motivation
+One of the main driving forces behind creating this project was to gain experience with AI-related technologies. As AI is shaping the future, acquiring working knowledge in this field is invaluable. Additionally, expanding skills in tech provides versatility and opens up new opportunities.
+
+## 2. Purpose of the Project
+This project was developed to assist Palmona Pathogenomics in building a preliminary AI chatbot. The chatbot will provide paid subscribers with actionable insights based on their individual data, enhancing their ability to analyze and address health-related issues.
+
+## 3. Problem Statement
+Palmona Pathogenomics focuses on combating emerging pathogen strains that pose risks to public health. This technology enables users to:
+- Uncover relationships between data points.
+- Detect anomalies.
+- Identify patterns that help predict pathogen behavior and guide the development of targeted interventions.
+
+## 4. Lessons Learned
+Throughout the challenges of getting the project off the ground—troubleshooting code and resolving dependency issues—I learned the value of patience. Building a project of this scope isn't impossible, but it requires perseverance and the ability to step back and approach problems methodically. Patience is a skill that can only be cultivated through experience.
+
