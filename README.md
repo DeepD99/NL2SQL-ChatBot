@@ -132,19 +132,19 @@ You can create a config.py file in the root directory of the project and add the
 
 ### Palmona Pathogenomics AI Chatbot Overview
 
-## 1. Motivation
+## 1. **Motivation**
 The primary motivation behind this project was to gain hands-on experience with AI-related technologies. As AI shapes the future, acquiring practical knowledge in this field is essential. Expanding skill sets across different areas of technology provides flexibility and opportunities for growth.
 
-## 2. Purpose
+## 2. **Purpose**
 The project was designed to help Palmona Pathogenomics build an AI-powered chatbot. This chatbot offers paid subscribers personalized insights by analyzing their individual data, enabling better decision-making in health-related scenarios.
 
-## 3. Problem Statement
+## 3. **Problem Statement**
 Palmona Pathogenomics focuses on combating emerging pathogen strains that threaten public health. The AI chatbot assists users by:
 - Uncovering relationships between data points.
 - Detecting anomalies in datasets.
 - Identifying patterns to predict pathogen behavior and inform the development of targeted interventions.
 
-## 4. Lessons Learned
+## 4. **Lessons Learned**
 Throughout the project, several challenges arose, including:
 - Troubleshooting code and resolving dependency issues.
 - Learning patience when results were not immediate.
