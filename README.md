@@ -1,43 +1,95 @@
-# NL2SQL Chatbot
+# NL2SQL Chatbot & Palmona Pathogenomics AI Chatbot Project
 
-## This projects consists of utilizing the OpenAI LLM, and a DB to find more insight about the information that lies in the DB.
-## The flow of the process goes as such:
-## Question -> LLM -> DB -> LLM ->answer
-## The code takes the human question, uses the LLM to turn it into a sql query with the knowledge of the DB properties, queries the answer and outputs the result back to the user.
-## Created the functionality to 'chat' with the LLM using streamlit.
-## Sensitive data is hidden in a config file, variables were imported in.
+## Table of Contents
+1. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
+   - [Project Flow](#project-flow)  
+   - [Functionality](#functionality)  
+   - [References](#references)  
+   - [Key Components](#key-components)  
+     - [Environment Variables Setup](#environment-variables-setup)  
+     - [Database Initialization](#database-initialization)  
+     - [LLM Model Setup](#llm-model-setup)  
+     - [Few-shot Examples](#few-shot-examples)  
+     - [Prompt Template Construction](#prompt-template-construction)  
+     - [Semantic Similarity Selector](#semantic-similarity-selector)  
+     - [Streamlit Chat Interface](#streamlit-chat-interface)  
+2. [Palmona Pathogenomics AI Chatbot Overview](#palmona-pathogenomics-ai-chatbot-overview)  
+   - [Motivation](#motivation)  
+   - [Purpose](#purpose)  
+   - [Problem Statement](#problem-statement)  
+   - [Lessons Learned](#lessons-learned)
 
-## Here is an article from which I got the code: https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql
-## There is also a video that goes into depth explaining everything: https://www.youtube.com/watch?v=fss6CrmQU2Y
+---
 
-## Environment Variables Setup: The code configures environment variables needed for LangChain and OpenAI API access. These variables include tracing, API keys, and endpoint configuration ## (LANGCHAIN_TRACING_V2, LANGCHAIN_ENDPOINT, OPENAI_API_KEY, LANGCHAIN_API_KEY).
+## NL2SQL Chatbot Overview
 
-## Database Initialization: Connects to a database using SQLAlchemy by setting the db_uri and initializing the SQLDatabase object to handle SQL queries.
+This project leverages the **OpenAI LLM (Large Language Model)** and a **database (DB)** to derive insights from the information stored within the database. 
 
-## LLM Model Setup: Initializes a ChatOpenAI model (GPT-3.5 Turbo) for generating responses. The temperature is set to 0, ensuring deterministic output.
+### Project Flow
+The process follows this sequence:  
+**Question → LLM → DB → LLM → Answer**
 
-## Few-shot Examples: Defines a list of few-shot examples that map user input to corresponding SQL queries. These examples are used to guide the model in formulating correct SQL queries based on input questions.
+1. A human question is transformed by the LLM into a SQL query based on the database properties.
+2. The query is executed on the database, retrieving the answer.
+3. The LLM then returns the result to the user.
 
-## Prompt Template Construction: Uses ChatPromptTemplate to create a custom template for interaction. The system is instructed to generate MySQL queries, and it references example SQL questions and their corresponding answers.
+### Functionality
+- Created a chat interface with **Streamlit** for user interaction with the LLM.  
+- Sensitive information (e.g., API keys) is stored in a **config file**, and relevant variables are imported into the code.
 
-## Semantic Similarity Selector: Implements a semantic similarity-based selector (SemanticSimilarityExampleSelector) to choose relevant examples from the vectorstore (Chroma) based on the user input, helping the model craft better responses.
+### References  
+- **Article**: [Mastering NL2SQL with LangChain](https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql)  
+- **Video**: [YouTube Explanation](https://www.youtube.com/watch?v=fss6CrmQU2Y)  
 
-## Streamlit App for Chat Interface: Uses Streamlit to create a simple web application that allows users to input queries, receive responses, and display the chat history. The app stores chat messages in the session state and reruns to update the conversation after each query.
+---
 
-# Palmona Pathogenomics AI Chatbot Project
+### Key Components
 
-## 1. Motivation
-One of the main driving forces behind creating this project was to gain experience with AI-related technologies. As AI is shaping the future, acquiring working knowledge in this field is invaluable. Additionally, expanding skills in tech provides versatility and opens up new opportunities.
+#### Environment Variables Setup
+- Configures environment variables necessary for **LangChain** and **OpenAI API**.  
+- Includes: `LANGCHAIN_TRACING_V2`, `LANGCHAIN_ENDPOINT`, `OPENAI_API_KEY`, and `LANGCHAIN_API_KEY`.
 
-## 2. Purpose of the Project
-This project was developed to assist Palmona Pathogenomics in building a preliminary AI chatbot. The chatbot will provide paid subscribers with actionable insights based on their individual data, enhancing their ability to analyze and address health-related issues.
+#### Database Initialization
+- Connects to a database using **SQLAlchemy** by setting the `db_uri` and initializing a `SQLDatabase` object for handling SQL queries.
 
-## 3. Problem Statement
-Palmona Pathogenomics focuses on combating emerging pathogen strains that pose risks to public health. This technology enables users to:
-- Uncover relationships between data points.
-- Detect anomalies.
-- Identify patterns that help predict pathogen behavior and guide the development of targeted interventions.
+#### LLM Model Setup
+- Initializes a **GPT-3.5 Turbo** model via `ChatOpenAI`.  
+- Temperature is set to **0** to ensure deterministic responses.
 
-## 4. Lessons Learned
-Throughout the challenges of getting the project off the ground—troubleshooting code and resolving dependency issues—I learned the value of patience. Building a project of this scope isn't impossible, but it requires perseverance and the ability to step back and approach problems methodically. Patience is a skill that can only be cultivated through experience.
+#### Few-shot Examples
+- Defines several **few-shot examples** that map user inputs to SQL queries. These examples assist the LLM in crafting accurate SQL queries based on the given questions.
 
+#### Prompt Template Construction
+- Uses `ChatPromptTemplate` to create a custom template.  
+- The model is instructed to generate **MySQL queries** using example questions and answers for reference.
+
+#### Semantic Similarity Selector
+- Implements a **SemanticSimilarityExampleSelector** from the **Chroma vectorstore**.  
+- This selector identifies relevant examples to enhance the model’s performance by selecting the most similar examples based on the user’s input.
+
+#### Streamlit Chat Interface
+- Uses **Streamlit** to build a simple web application for interaction.  
+- Stores chat history in the **session state** to maintain conversations across user inputs.
+
+---
+
+## Palmona Pathogenomics AI Chatbot Overview
+
+### 1. Motivation  
+The primary motivation behind this project was to gain hands-on experience with **AI-related technologies**. As AI shapes the future, acquiring practical knowledge in this field is essential. Expanding skillsets across different areas of technology provides flexibility and opportunities for growth.
+
+### 2. Purpose  
+The project was designed to help **Palmona Pathogenomics** build an **AI-powered chatbot**. This chatbot offers paid subscribers personalized insights by analyzing their individual data, enabling better decision-making in health-related scenarios.
+
+### 3. Problem Statement  
+Palmona Pathogenomics focuses on combating **emerging pathogen strains** that threaten public health. The AI chatbot assists users by:
+- **Uncovering relationships** between data points.
+- **Detecting anomalies** in datasets.
+- **Identifying patterns** to predict pathogen behavior and inform the development of targeted interventions.
+
+### 4. Lessons Learned  
+Throughout the project, several challenges arose, including:
+- **Troubleshooting code** and resolving dependency issues.
+- Learning **patience** when results were not immediate.  
+
+This experience emphasized the importance of **perseverance** and the ability to take a step back when necessary. Patience is a critical skill, developed only through consistent practice and overcoming setbacks.
