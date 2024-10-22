@@ -53,6 +53,7 @@ Also make sure you have created accounts for OpenAI and LangChain, you must crea
 
 2. **Install the requirements**
    Run this command:
+   ```bash
    pip install -r requirements.txt
 
 ### Environment-variables-setup
