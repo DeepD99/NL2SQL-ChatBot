@@ -96,8 +96,8 @@ The process follows this sequence:
 - Sensitive information (e.g., API keys) is stored in a config file, and relevant variables are imported into the code.
 
 ## References
-- **Article:** [Mastering NL2SQL with LangChain](#) <!-- Add the actual link here -->
-- **Video:** [YouTube Explanation](#) <!-- Add the actual link here -->
+- **Article:** [Mastering NL2SQL with LangChain](#) <https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql>
+- **Video:** [YouTube Explanation](#) <>
 
 ## Key Components
 
