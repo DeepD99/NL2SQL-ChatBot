@@ -69,5 +69,5 @@ You can create a .env file in the root directory of the project and add the foll
 ### Running-the-application
 
 1. **Running the application**
-   To run the project, run the the .ipynb file, this file will start streamlit and launch the chatbot
+   To run the project, go to the file titled 'Run', assign it the file extension .ipynb, this file will start streamlit and launch the chatbot
 
