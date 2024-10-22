@@ -20,10 +20,10 @@
    - [Running the Application](#Running-the-application)  
    - [All Requirements for the Project](requirements.txt)  
 3. [Palmona Pathogenomics AI Chatbot Overview](#palmona-pathogenomics-ai-chatbot-overview)  
-   - [Motivation](#motivation)  
-   - [Purpose](#purpose)  
-   - [Problem Statement](#problem-statement)  
-   - [Lessons Learned](#lessons-learned)
+   - [Motivation](#Motivation)  
+   - [Purpose](#Purpose)  
+   - [Problem Statement](#Problem-Statement)  
+   - [Lessons Learned](#Lessons-Learned)
 
 ---
 
