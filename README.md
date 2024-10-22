@@ -67,13 +67,12 @@ You can create a config.py file in the root directory of the project and add the
 
 Also have the DB your connecting to handy, as you will need the following information to put within the config file:
 
-USER = ""
-PASSWORD = ""
-HOST = ""
-PORT = ""
-DB = ""
-
-DB_URI = f"mysql+pymysql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB}"
+- USER = ""
+- PASSWORD = ""
+- HOST = ""
+- PORT = ""
+- DB = ""
+- DB_URI = f"mysql+pymysql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB}"
 
 
 ### Running-the-application
