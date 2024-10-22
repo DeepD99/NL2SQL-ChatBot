@@ -27,6 +27,55 @@
 
 ---
 
+# NL2SQL Chatbot Overview
+
+This project leverages the OpenAI LLM (Large Language Model) and a database (DB) to derive insights from the information stored within the database.
+
+## Project Flow
+The process follows this sequence:
+- **Question** → **LLM** → **DB** → **LLM** → **Answer**
+
+1. A human question is transformed by the LLM into a SQL query based on the database properties.
+2. The query is executed on the database, retrieving the answer.
+3. The LLM then returns the result to the user.
+
+## Functionality
+- Created a chat interface with Streamlit for user interaction with the LLM.
+- Sensitive information (e.g., API keys) is stored in a config file, and relevant variables are imported into the code.
+
+## References
+- **Article:** [Mastering NL2SQL with LangChain](#) <https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql>
+- **Video:** [YouTube Explanation](#) <https://www.youtube.com/watch?v=fss6CrmQU2Y>
+
+## Key Components
+
+### Environment Variables Setup
+- Configures environment variables necessary for LangChain and OpenAI API.
+- Includes: `LANGCHAIN_TRACING_V2`, `LANGCHAIN_ENDPOINT`, `OPENAI_API_KEY`, and `LANGCHAIN_API_KEY`.
+
+### Database Initialization
+- Connects to a database using SQLAlchemy by setting the `db_uri` and initializing a `SQLDatabase` object for handling SQL queries.
+
+### LLM Model Setup
+- Initializes a GPT-3.5 Turbo model via `ChatOpenAI`.
+- Temperature is set to 0 to ensure deterministic responses.
+
+### Few-shot Examples
+- Defines several few-shot examples that map user inputs to SQL queries. These examples assist the LLM in crafting accurate SQL queries based on the given questions.
+
+### Prompt Template Construction
+- Uses `ChatPromptTemplate` to create a custom template.
+- The model is instructed to generate MySQL queries using example questions and answers for reference.
+
+### Semantic Similarity Selector
+- Implements a `SemanticSimilarityExampleSelector` from the Chroma vectorstore.
+- This selector identifies relevant examples to enhance the model’s performance by selecting the most similar examples based on the user’s input.
+
+### Streamlit Chat Interface
+- Uses Streamlit to build a simple web application for interaction.
+- Stores chat history in the session state to maintain conversations across user inputs.
+
+
 ## Getting Started
 
 To get started with the NL2SQL Chatbot and Palmona Pathogenomics AI Chatbot Project, follow the steps below:
@@ -79,55 +128,7 @@ You can create a config.py file in the root directory of the project and add the
 
 1. **Running the application**
    To run the project, go to the file titled 'Run', assign it the file extension .ipynb, this file will start streamlit and launch the chatbot
-
-# NL2SQL Chatbot Overview
-
-This project leverages the OpenAI LLM (Large Language Model) and a database (DB) to derive insights from the information stored within the database.
-
-## Project Flow
-The process follows this sequence:
-- **Question** → **LLM** → **DB** → **LLM** → **Answer**
-
-1. A human question is transformed by the LLM into a SQL query based on the database properties.
-2. The query is executed on the database, retrieving the answer.
-3. The LLM then returns the result to the user.
-
-## Functionality
-- Created a chat interface with Streamlit for user interaction with the LLM.
-- Sensitive information (e.g., API keys) is stored in a config file, and relevant variables are imported into the code.
-
-## References
-- **Article:** [Mastering NL2SQL with LangChain](#) <https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql>
-- **Video:** [YouTube Explanation](#) <https://www.youtube.com/watch?v=fss6CrmQU2Y>
-
-## Key Components
-
-### Environment Variables Setup
-- Configures environment variables necessary for LangChain and OpenAI API.
-- Includes: `LANGCHAIN_TRACING_V2`, `LANGCHAIN_ENDPOINT`, `OPENAI_API_KEY`, and `LANGCHAIN_API_KEY`.
-
-### Database Initialization
-- Connects to a database using SQLAlchemy by setting the `db_uri` and initializing a `SQLDatabase` object for handling SQL queries.
-
-### LLM Model Setup
-- Initializes a GPT-3.5 Turbo model via `ChatOpenAI`.
-- Temperature is set to 0 to ensure deterministic responses.
-
-### Few-shot Examples
-- Defines several few-shot examples that map user inputs to SQL queries. These examples assist the LLM in crafting accurate SQL queries based on the given questions.
-
-### Prompt Template Construction
-- Uses `ChatPromptTemplate` to create a custom template.
-- The model is instructed to generate MySQL queries using example questions and answers for reference.
-
-### Semantic Similarity Selector
-- Implements a `SemanticSimilarityExampleSelector` from the Chroma vectorstore.
-- This selector identifies relevant examples to enhance the model’s performance by selecting the most similar examples based on the user’s input.
-
-### Streamlit Chat Interface
-- Uses Streamlit to build a simple web application for interaction.
-- Stores chat history in the session state to maintain conversations across user inputs.
-
+   
 
 ### Palmona Pathogenomics AI Chatbot Overview
 
