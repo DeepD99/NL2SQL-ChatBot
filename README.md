@@ -74,9 +74,30 @@ Also have the DB your connecting to handy, as you will need the following inform
 - DB = ""
 - DB_URI = f"mysql+pymysql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB}"
 
-
 ### Running-the-application
 
 1. **Running the application**
    To run the project, go to the file titled 'Run', assign it the file extension .ipynb, this file will start streamlit and launch the chatbot
+
+### Palmona Pathogenomics AI Chatbot Overview
+
+## 1. Motivation
+The primary motivation behind this project was to gain hands-on experience with AI-related technologies. As AI shapes the future, acquiring practical knowledge in this field is essential. Expanding skill sets across different areas of technology provides flexibility and opportunities for growth.
+
+## 2. Purpose
+The project was designed to help Palmona Pathogenomics build an AI-powered chatbot. This chatbot offers paid subscribers personalized insights by analyzing their individual data, enabling better decision-making in health-related scenarios.
+
+## 3. Problem Statement
+Palmona Pathogenomics focuses on combating emerging pathogen strains that threaten public health. The AI chatbot assists users by:
+- Uncovering relationships between data points.
+- Detecting anomalies in datasets.
+- Identifying patterns to predict pathogen behavior and inform the development of targeted interventions.
+
+## 4. Lessons Learned
+Throughout the project, several challenges arose, including:
+- Troubleshooting code and resolving dependency issues.
+- Learning patience when results were not immediate.
+
+This experience emphasized the importance of perseverance and the ability to take a step back when necessary. Patience is a critical skill, developed only through consistent practice and overcoming setbacks.
+
 
