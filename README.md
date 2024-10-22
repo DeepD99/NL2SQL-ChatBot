@@ -97,7 +97,7 @@ The process follows this sequence:
 
 ## References
 - **Article:** [Mastering NL2SQL with LangChain](#) <https://blog.futuresmart.ai/mastering-natural-language-to-sql-with-langchain-nl2sql>
-- **Video:** [YouTube Explanation](#) <>
+- **Video:** [YouTube Explanation](#) <https://www.youtube.com/watch?v=fss6CrmQU2Y>
 
 ## Key Components
 
