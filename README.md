@@ -3,7 +3,8 @@
 ## Table of Contents
 1. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
-   - [Installation](#installation)  
+   - [Installation](#installation)
+   - [Environment Variables Setup](#Environment-variables-setup)  
    - [Running the Application](#Running-the-application)  
    - [All Requirements for the Project](requirements.txt)  
 2. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
@@ -53,6 +54,17 @@ Also make sure you have created accounts for OpenAI and LangChain, you must crea
 2. **Install the requirements**
    Run this command:
    pip install -r requirements.txt
+
+### Environment-variables-setup
+
+1. Before running the application, you need to set up the following environment variables. 
+You can create a .env file in the root directory of the project and add the following lines:
+
+LANGCHAIN_TRACING_V2=<your-tracing-value>
+LANGCHAIN_ENDPOINT=<your-endpoint-value>
+OPENAI_API_KEY=<your-openai-api-key>
+LANGCHAIN_API_KEY=<your-langchain-api-key>
+
 
 ### Running-the-application
 
