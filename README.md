@@ -6,7 +6,7 @@
    - [Installation](#installation)  
    - [Environment Variables Setup](#environment-variables-setup)  
    - [Running the Application](#running-the-application)  
-   - [Sample `requirements.txt`](#sample-requirementstxt)  
+   - [All Requirements for the Project](#sample-requirementstxt)  
 2. [NL2SQL Chatbot Overview](#nl2sql-chatbot-overview)  
    - [Project Flow](#project-flow)  
    - [Functionality](#functionality)  
